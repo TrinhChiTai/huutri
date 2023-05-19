@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dây Trợ Lực - H_Tee Shop</title>
+    <link rel="icon" href="./Picture/logoT.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./themify-icons-font (1)/themify-icons/themify-icons.css">
+
+
+
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .clear{
+            clear: both;
+        }
+        
+        .home{
+            padding: 0 100px;
+        }
+        
+        #header{
+            background-color:black;
+            height: 58px;
+            font-style: bold;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 5;
+        }
+        
+        #nav li a{
+            padding: 0 24px; 
+            line-height: 58px;
+            text-decoration: none;
+            color:bisque;
+            position: relative;
+            display: block;
+        }
+        
+        #nav li:hover{
+            background-color:rgb(17, 129, 133);
+            transition: all .5s;
+        }
+        
+        
+        #nav >li{
+            display: inline-block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+        }
+        
+        #nav li:hover .subnav{
+            display:block;
+        }
+        
+        .subnav{
+            box-shadow: 0 0 10px  rgba(0,0,.5);
+        }
+        
+        .subnav li{
+            list-style-type: none;
+            border-bottom: 1px solid gray;
+        }
+        
+        #nav .subnav {
+            display:none;
+            position: absolute;
+            background-color: black;
+        }
+        
+        .kc{
+            margin: 0 15px;
+        }
+        
+        .fll{
+            float: left;
+        }
+        
+        .flr{
+            float: right;
+            line-height: 58px;
+            font-size:  18px;
+            margin-right: 10px;
+        }
+        
+        .flr a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+
+
+        /* Phần tablet */
+
+@media only screen and (min-width:740px) and (max-width:1023px) {
+    .flr {
+        display: none !important;
+    }
+
+    .hotline {
+        display: none !important;
+    }
+
+    .home {
+        padding: 0 50px;
+    }
+
+    .kc{
+        margin: 0 8px;
+    }
+}
+
+
+
+
+
+/* Phần mobile */
+
+@media screen and (max-width:739px) {
+    .flr{
+        display: none !important;
+    }
+
+    .home {
+        padding: 0 15px;
+    }
+
+    .hotline {
+        display: none !important;
+    }
+
+    .kc{
+        margin: 0;
+    }
+
+    .more{
+        display: none !important;
+    }
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="fll">
+        <ul id="nav">
+            <li class="home"><a href="shopHTee_pro.html"><i class="ti-home"></i> Home</a></li>
+            <li class="kc wv"><a href="">Weight Vests</a></li>
+            <li class="kc"><a href="">Shop</a>
+                <ul class="subnav">
+                    <li><a href="">Áo tank top</a></li>
+                    <li><a href="">PARALLETTES</a></li>
+                    <li><a href="">Băng quấn cổ tay</a></li>
+                    <li><a href="">Dây Trợ Lực</a></li>
+                    <li><a href="">Dây nhảy</a></li>
+                    <li><a href="">Đai đeo tạ</a></li>
+    
+                </ul>
+            </li>
+    
+            <li class="kc hotline"><a href="">Hotline</a>
+                <ul class="subnav">
+                    <li><a href="">099 679 6879</a></li>
+                    <li><a href="">090 123 6789</a></li>
+                </ul>
+            </li>
+    
+            <li class="kc more"><a href="">More <i class="ti-angle-down"></i></a>
+                <ul class="subnav">
+                    <li><a href="">Gym</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Vlog</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+        </div>
+    
+        <div class="flr">
+            <a href="">Register | Log In</a>
+        </div>
+    
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
